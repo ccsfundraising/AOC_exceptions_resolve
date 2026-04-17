@@ -12,14 +12,19 @@ import streamlit as st
 # =========================================================
 # PATHS
 # =========================================================
-DATA_FILE = "/Users/yashakaushal/Documents/aoc_wave4/APP/atleast_one_clma_portid_exceptions_ALL.xlsx"  # csv / txt / tsv / xlsx all supported
-OUTPUT_DIR = "/Users/yashakaushal/Documents/aoc_wave4/APP/"
+BASE_DIR = Path(__file__).resolve().parent
 
-DB_FILE = os.path.join(OUTPUT_DIR, "decisions.db")
-PARISH_MATCH_FILE = os.path.join(OUTPUT_DIR, "parish_portfolio_match_decisions.csv")
-PAIR_RELATION_FILE = os.path.join(OUTPUT_DIR, "parish_pair_relationship_decisions.csv")
+# Data file (must be in repo)
+DATA_FILE = BASE_DIR / "atleast_one_clma_portid_exceptions_ALL.xlsx"
 
-os.makedirs(OUTPUT_DIR, exist_ok=True)
+# Writable directory (IMPORTANT for Posit)
+OUTPUT_DIR = Path(os.environ.get("APP_DATA_DIR", "/tmp")) / "parish_portfolio_review"
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+
+# Outputs
+DB_FILE = OUTPUT_DIR / "decisions.db"
+PARISH_MATCH_FILE = OUTPUT_DIR / "parish_portfolio_match_decisions.csv"
+PAIR_RELATION_FILE = OUTPUT_DIR / "parish_pair_relationship_decisions.csv"
 
 
 # =========================================================
