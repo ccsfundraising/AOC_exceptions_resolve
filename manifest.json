@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "locale": "en_US.UTF-8",
+  "metadata": {
+    "appmode": "python-streamlit",
+    "entrypoint": "app.py"
+  },
+  "python": {
+    "version": "3.9.6",
+    "package_manager": {
+      "name": "pip",
+      "version": "21.2.4",
+      "package_file": "requirements.txt"
+    }
+  },
+  "files": {
+    "requirements.txt": {
+      "checksum": "6fb5a42f4317ae1d8000c92c66eda423"
+    },
+    ".DS_Store": {
+      "checksum": "90292f3b472f705e8577a43701e8847f"
+    },
+    ".claude/settings.local.json": {
+      "checksum": "29687cac7f89d476dfe2499c6f106f2e"
+    },
+    "app.py": {
+      "checksum": "b415f704fb49772d1b0e685267c36fa2"
+    },
+    "atleast_one_clma_portid_exceptions_ALL.xlsx": {
+      "checksum": "d43c0fb12b2d5416071d2808750fce12"
+    },
+    "not_useful/ADOC_DonorsForCCS_Wave4_civis_input.xlsx": {
+      "checksum": "2f05de56c7cde5bb6b3824ba125cc31e"
+    },
+    "not_useful/atleast_one_clma_portid_exceptions_app.xlsx": {
+      "checksum": "8dca1986687c0b19a2fc250f448693f8"
+    },
+    "not_useful/z_atleast_one_clma_portid_exceptions_ALL_ORIGINAL.xlsx": {
+      "checksum": "d43c0fb12b2d5416071d2808750fce12"
+    }
+  }
+}
