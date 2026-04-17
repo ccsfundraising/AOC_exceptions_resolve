@@ -18,7 +18,8 @@ BASE_DIR = Path(__file__).resolve().parent
 DATA_FILE = BASE_DIR / "atleast_one_clma_portid_exceptions_ALL.xlsx"
 
 # Writable directory (IMPORTANT for Posit)
-OUTPUT_DIR = Path(os.environ.get("APP_DATA_DIR", "/tmp")) / "parish_portfolio_review"
+# OUTPUT_DIR = Path(os.environ.get("APP_DATA_DIR", "/tmp")) / "parish_portfolio_review"
+OUTPUT_DIR = Path("/aspm-apps/aspm-match-app") / "parish_portfolio_review"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 # Outputs
